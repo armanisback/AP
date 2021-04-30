@@ -1,10 +1,10 @@
-output: billiards.o table1.o ball1.o
-	g++ billiards.o table1.o ball1.o -o billiards.out
-billiards.o: billiards.cpp
-	g++ -c billiards.cpp
-table1.o: table1.cpp table1.hpp
-	g++ -c table1.cpp
-ball1.o: ball1.cpp ball1.hpp
-	g++ -c ball1.cpp
+output: billiards2.o table2.o ball2.o
+	g++ billiards2.o table2.o ball2.o -o billiards.out
+billiards.o: billiards2.cpp
+	g++ -c billiards2.cpp
+table1.o: table2.cpp table2.hpp
+	g++ -c table2.cpp
+ball1.o: ball2.cpp ball2.hpp
+	g++ -c ball2.cpp
 clean:
-	rm *.o output	
+	rm *.o output
